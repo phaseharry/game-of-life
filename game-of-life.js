@@ -55,4 +55,15 @@ class GameOfLife {
   livingNeighbors(row, col){ //checks the cells coordinates for all living neighbors near it to determine if current cell lives or dies
 
   }
+  clearBoard(){
+    const board = []
+    for(let i = 1; i <= this.height; i++){
+      const row = []
+      for(let j = 1; j <= this.width; j++){
+        row.push(0)
+      }
+      board.push(row)
+    }
+    this.board = board
+  }
 }

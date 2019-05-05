@@ -44,5 +44,9 @@ document.getElementById('random').addEventListener('click', event => {
 })
 
 document.getElementById('clear').addEventListener('click', event => {
-
+  for(let i = 0; i < tds.length; i++){
+    const cell = tds[i]
+    cell.classList.remove('alive')
+  }
+  gol.clearBoard()
 })
