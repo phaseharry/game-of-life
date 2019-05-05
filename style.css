@@ -9,16 +9,10 @@
   border: 5px solid black;
 }
 
-#game-container {
-  display: flex;
-  flex-direction: row;
-}
-
 #button-container {
   margin: 2em auto;
   width: 500px;
   display: flex;
-  flex-direction: column;
   justify-content: space-around;
 }
 
@@ -28,5 +22,10 @@
 
 td, tr {
   border: 1px solid black;
+}
+
+button {
+  width: 100px;
+  height: 40px;
 }
 
