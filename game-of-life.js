@@ -34,6 +34,10 @@ class GameOfLife {
 
   }
   tick(){
+    const newBoard = this.makeBoard()
+    
+
+
 
   }
   makeBoard(){
@@ -41,12 +45,7 @@ class GameOfLife {
     for(let i = 1; i <= this.height; i++){
       const row = []
       for(let j = 1; j <= this.width; j++){
-        const neighbors = this.livingNeighbors(i, j)
-        if(neighbors > 1 && neighbors <= 3){
-          row.push(1)
-        } else {
-          row.push(0)
-        }
+       row.push(0)
       }
       board.push(row)
     }
@@ -56,14 +55,6 @@ class GameOfLife {
 
   }
   clearBoard(){
-    const board = []
-    for(let i = 1; i <= this.height; i++){
-      const row = []
-      for(let j = 1; j <= this.width; j++){
-        row.push(0)
-      }
-      board.push(row)
-    }
-    this.board = board
+    this.board = this.makeBoard()
   }
 }

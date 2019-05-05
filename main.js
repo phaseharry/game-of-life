@@ -1,5 +1,5 @@
-const height = 20
-const width = 20
+let height = 20
+let width = 20
 const gol = new GameOfLife(height, width)
 
 const tds = []
